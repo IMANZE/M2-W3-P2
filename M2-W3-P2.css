@@ -1,0 +1,9 @@
+.footer{
+    background-color: black;
+    padding: 16px;
+    color: white;
+}
+body{
+  padding: 20px;
+  background-color: rgb(127, 255, 185); border: 2px solid black;
+  }
