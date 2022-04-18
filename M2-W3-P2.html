@@ -50,9 +50,10 @@ EX12: Write a function to color the price of the products in a different one eve
 <div class="main-section">
 <h1 id="main-header"> Ezi-Smartphones</h1>
 <input type="button" onclick="SetHeaderToPicked() "  value ="Set h1 to Picked" />
+<button onclick="toggleImagesClass()">Toggle Image</button>
 <table>
     <tr>
-       <th>Phone Proucts</th>  
+       <th>Phone Products</th>  
        <th>Description</th> 
     </tr>
     <tr>
@@ -140,7 +141,14 @@ function changeFooter(){
       for(let i = 0; i <aTags.length; i++) {
        aTags[i].classList.add("newLink")
       }
-    }           
+}
+const toggleImagesClass = function () {
+      let images = document.querySelectorAll("img")
+      for (let i = 0; i < images.length; i++) {
+        const singleImg = images[i];
+        singleImg.classList.toggle("hidden") 
+      }
+}
 </script>
 </body>
 </html>

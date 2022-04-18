@@ -7,14 +7,17 @@ body{
   padding: 20px;
   background-color: rgb(127, 255, 185); border: 2px solid black;
   }
-  .Picked {
+.Picked {
     color: blue;
     border-radius: 6px;
     border-width: 2px;
     border-style: solid;
     border-color: blue;
-    }  
-    .newLink {
+  }  
+.newLink {
       text-decoration: double;
       color: palevioletred
-      }  
+  } 
+  .hidden{
+    display: none;
+} 
