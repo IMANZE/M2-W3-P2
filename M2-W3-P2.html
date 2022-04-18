@@ -49,6 +49,7 @@ EX12: Write a function to color the price of the products in a different one eve
 
 <div class="main-section">
 <h1 id="main-header"> Ezi-Smartphones</h1>
+<input type="button" onclick="SetHeaderToPicked() "  value ="Set h1 to Picked" />
 <table>
     <tr>
        <th>Phone Proucts</th>  
@@ -121,6 +122,11 @@ EX12: Write a function to color the price of the products in a different one eve
 </div> 
 
 </div>
-
+<script type="text/javascript">
+const SetHeaderToPicked = function(){
+      let headerNode = document.getElementById("main-header")
+       headerNode.classList.add("Picked")
+}
+</script>
 </body>
 </html>
