@@ -135,8 +135,12 @@ function changeFooter(){
           let fakeFooter = document.getElementsByClassName("footer")
           fakeFooter[0].innerText = 'fake info'
  }
-
-            
+ function addClassToLinks(){
+      let aTags = document.querySelectorAll("a") 
+      for(let i = 0; i <aTags.length; i++) {
+       aTags[i].classList.add("newLink")
+      }
+    }           
 </script>
 </body>
 </html>

@@ -14,3 +14,7 @@ body{
     border-style: solid;
     border-color: blue;
     }  
+    .newLink {
+      text-decoration: double;
+      color: palevioletred
+      }  
