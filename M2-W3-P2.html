@@ -67,8 +67,8 @@ EX12: Write a function to color the price of the products in a different one eve
         <td>
              Samsung  is a South Korean multinational manufacturing conglomerate headquartered in Samsung Town, Seoul, South Korea.  
         </td>
-        <td>
-            €800
+        <td class="price">
+            €1000
         </td>
     </tr>
     <tr>
@@ -81,7 +81,7 @@ EX12: Write a function to color the price of the products in a different one eve
         <td>
             Nokia is a finnish multinational manufacturing conglomerate headquartered in Espoo, Finland. 
        </td>
-       <td>
+       <td class="price">
         €800
        </td>
     </tr>
@@ -95,7 +95,7 @@ EX12: Write a function to color the price of the products in a different one eve
          <td>
             Apple is a American multinational manufacturing comapny. One of the most widely used phones.   
        </td>
-       <td>
+       <td class="price">
         €1200
        </td>
     </tr>
@@ -109,7 +109,7 @@ EX12: Write a function to color the price of the products in a different one eve
            <td>
             Hauwei is a multinational manufacturing conglomerate headquartered in China. It is very affordable.   
        </td>
-       <td>
+       <td class="price">
         €650
        </td>
     </tr>
@@ -123,7 +123,7 @@ EX12: Write a function to color the price of the products in a different one eve
          <td>
             Tecno is a multinational manufacturing conglomerate headquartered in China. 
        </td>
-       <td>
+       <td class="price">
          €500
        </td> 
     </tr>
@@ -137,34 +137,7 @@ EX12: Write a function to color the price of the products in a different one eve
 <div class="message board">   
     <a href="message board.html">message board</a>
 </div> 
-
 </div>
-<script type="text/javascript">
-const SetHeaderToPicked = function(){
-      let headerNode = document.getElementById("main-header")
-       headerNode.classList.add("Picked")
-}
-function changeColor(){
-          let page = document.getElementsByTagName("body")
-          page[0].style.backgroundColor = "red"
-}
-function changeFooter(){
-          let fakeFooter = document.getElementsByClassName("footer")
-          fakeFooter[0].innerText = 'fake info'
- }
- function addClassToLinks(){
-      let aTags = document.querySelectorAll("a") 
-      for(let i = 0; i <aTags.length; i++) {
-       aTags[i].classList.add("newLink")
-      }
-}
-const toggleImagesClass = function () {
-      let images = document.querySelectorAll("img")
-      for (let i = 0; i < images.length; i++) {
-        const singleImg = images[i];
-        singleImg.classList.toggle("hidden") 
-      }
-}
-</script>
+<script src="M2-W3-P2.js"></script>
 </body>
 </html>
